@@ -16,10 +16,14 @@ def test_split_pdf_file_not_found():
         split_pdf("nonexistent.pdf")
 
 
-def test_split_pdf_invalid_file_type():
+def test_split_pdf_invalid_file_type(tmp_path):
     """Test that ValueError is raised for non-PDF files."""
+    # Create a temporary non-PDF file
+    txt_file = tmp_path / "test.txt"
+    txt_file.write_text("not a pdf")
+
     with pytest.raises(ValueError):
-        split_pdf("test.txt")
+        split_pdf(str(txt_file))
 
 
 def test_split_pdf_by_range_invalid_range():
