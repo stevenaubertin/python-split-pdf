@@ -33,3 +33,4 @@ Thumbs.db
 output/
 *.pdf
 !sample.pdf
+.claude/settings.local.json
