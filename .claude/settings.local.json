@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(c:/Users/x0r/repo/python-split-pdf/venv/Scripts/pip install:*)",
+      "Bash(c:/Users/x0r/repo/python-split-pdf/venv/Scripts/pytest tests/ -v)",
+      "Bash(c:/Users/x0r/repo/python-split-pdf/venv/Scripts/python.exe:*)"
+    ]
+  }
+}
